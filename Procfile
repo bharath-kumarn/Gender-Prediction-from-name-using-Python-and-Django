@@ -1,1 +1,1 @@
-web: gununicorn hellodevdennis.wsgi --log-file -
+web: gununicorn genderprediction-python-django.wsgi --log-file -
