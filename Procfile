@@ -1,0 +1,1 @@
+web: gununicorn hellodevdennis.wsgi --log-file -
