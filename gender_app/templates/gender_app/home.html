@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Gender Prediction</h1>
+
+<h3> Please enter your name to predict the gender</h3>
+
+<form method="post">
+    {% block content %}
+    {% csrf_token %}
+    {% load static %}
+    {% load widget_tweaks %}
+    {% render_field form.name class="form-control" Placeholder="Enter your name Here" %}
+
+    <button class="btn-primary btn" type="submit" name="submit" id="btn-save">
+                                            submit
+                                        </button>
+</form>
+    {% endblock %}
+
+</body>
+</html>
